@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Create</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="container bg-dark text-white">
+        <h1>Student registration</h1>
+      </div>
+      <div class="container">
+        <form action="/studentcreate" method="post">
+             <label for="first_name">First Name:</label>
+             <input type="text" id="first_name" name="first_name" required /><br />
+
+             <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required /><br />
+
+             <label for="city">City:</label>
+            <input type="text" id="city" name="city" required /><br />
+
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" required /><br />
+
+          <input type="submit" value="Create Student" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
